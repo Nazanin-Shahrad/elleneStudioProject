@@ -1,38 +1,23 @@
 import {useEffect , useState } from 'react';
 
+
+
 //components
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import Loader from "./components/Loader";
+import About from './components/About';
+
 
 
 function App() {
 
-  const [loading , setLoading] = useState(true);
-
-  useEffect(() => {
-    loading
-    ? document.querySelector("body").classList.add("loading")
-    : document.querySelector("body").classList.remove("loading");
-  },[loading])
-
 
   return (
     <>
-    {loading ? (
-      <Loader setLoading={setLoading} />
-    ) : (
-      <>
-        <Header />
+        <Navbar />
         <Banner />
-        {!loading && (
-          <div className='transition-image final'>
-            <img src={`/images/image-2.jpg`} alt=""/>
-          </div>
-        )}
-      </>
-     )}
-  
+        <About />
+        
     </>
   );
 }
