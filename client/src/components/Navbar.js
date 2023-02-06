@@ -4,15 +4,18 @@ import styled from 'styled-components';
 const NavbarWrapper = styled.div`
     width: 100vw;
     height: 60px;
-    background-color: #e9dbd4;
+    /* background-color: #e9dbd4; */
     display: flex;
+    background-color: transparent;
     align-items: center;
     justify-content: space-around;
     font-family: 'Bodoni Moda';
         font-weight: lighter;
-        position: fixed;
+        /* position: fixed; */
         top: 0;
         left: 0;
+        transition: 1s all ease;
+
 
     .logo{
         font-size: 20px;

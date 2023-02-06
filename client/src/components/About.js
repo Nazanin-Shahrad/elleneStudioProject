@@ -9,8 +9,10 @@ const AboutWrapper = styled.div`
     gap: 50px;
     padding: 5% 5%;
     margin-top: 10%;
+    margin-bottom: 10%;
     height: calc(100vh - 60px);
     width: 100%;
+    background-color: white;
 
 
     .aboutImage{
@@ -40,7 +42,10 @@ const AboutWrapper = styled.div`
     p{
         font-family: lato;
         font-size: 20px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
+        line-height: 2rem;
+        word-spacing: 2px;
+        text-align: justify;
     }
 
 }
